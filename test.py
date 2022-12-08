@@ -1,11 +1,15 @@
-import chessdotcom
+#Example#
 
-username= input("Please enter a Username: ")
 
-#year = input("Please enter a year: ")
+test = {
+    2020 : {1 : "gaming", 2 : "2gaming" },
 
-#month = input("Please enter a month: ")
+    2021 : {1 : "chess", 2 : "2chess"}
+    }
 
-x = chessdotcom.get_player_profile(username)
+#Goes through years
+for year in test:
+    #Goes through each month
+    for month in test[year]:
 
-print(x)
+        print(test[year][month])
